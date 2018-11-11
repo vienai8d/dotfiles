@@ -1,0 +1,41 @@
+syntax enable
+colorscheme elflord
+
+set autoindent
+set backspace=indent,eol,start
+set expandtab
+set list
+set listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
+set number
+set ruler
+set shiftwidth=4
+set smartindent
+set tabstop=4
+set title
+set virtualedit=block
+set whichwrap=b,s,[,],<,>
+
+nnoremap <C-c><C-c> :<C-u>nohlsearch<CR>
+nnoremap <Space>Q  :<C-u>q!<CR>
+nnoremap <Space>W  :<C-u>wq<CR>
+nnoremap <Space>h  ^
+nnoremap <Space>l  $
+nnoremap <Space>q  :<C-u>q<CR>
+nnoremap <Space>w  :<C-u>w<CR>
+noremap <BS> <Nop>
+noremap <CR> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+noremap <Space> <Nop>
+noremap <Up> <Nop>
+noremap ZQ <Nop>
+noremap ZZ <Nop>
+noremap! <BS> <Nop>
+noremap! <CR> <Nop>
+noremap! <Down> <Nop>
+noremap! <Left> <Nop>
+noremap! <Right> <Nop>
+noremap! <Up> <Nop>
+vnoremap <Space>se :s//g<Left><Left><Left>
+vnoremap <Space>so :!sort<CR>

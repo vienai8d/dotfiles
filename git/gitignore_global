@@ -1,0 +1,13 @@
+# macOS
+*~
+.DS_Store
+
+# Python
+*.pyc
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# idea's IDE
+.idea/

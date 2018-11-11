@@ -1,0 +1,34 @@
+[user]
+    email = 31370233+vienai8d@users.noreply.github.com
+    name = vienai8d
+[color]
+    ui = auto
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = vim
+[alias]
+    a = add
+    aa = add .
+    b = branch
+    bd = !"git branch | grep -v '^*' | xargs git branch -D"
+    c = checkout
+    cb = checkout -B
+    cf = checkout -f
+    cdev = checkout -f origin/master -B develop
+    chr = cherry pick
+    coa = commit --amend
+    com = commit -m
+    d = diff
+    fe = fetch
+    fep = fetch --prune
+    l = log --all --graph --pretty='format:%C(yellow)%h%C(cyan)%d %C(red)%ar     %C(reset)%s'
+    me = merge
+    p = push
+    pf = push -f
+    po = push origin
+    pof = push origin -f
+    re = rebase
+    rei = rebase -i origin/master
+    res = reset
+    resh = reset --soft HEAD~
+    s = status

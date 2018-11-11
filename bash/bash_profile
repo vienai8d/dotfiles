@@ -1,0 +1,41 @@
+# Setup anyenv (see https://github.com/riywo/anyenv)
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+
+# Activate virtualenv
+source ~/.venv/bin/activate
+
+# Setup a prompt
+export PS1='$ '
+
+# Setup aliases
+alias g=git
+_IS_ALIAS_LINE=0
+while read line
+do
+  if [ $_IS_ALIAS_LINE -eq 0 ];then
+    echo $line | grep -e '^\[' > /dev/null
+    if [ $? -eq 0 ]; then
+      if [ "$line" == '[alias]' ]; then
+        _IS_ALIAS_LINE=1
+      else
+        _IS_ALIAS_LINE=0
+      fi
+    fi
+  else
+    _ALIAS_NAME=`echo $line | sed 's/^  *//g' | sed 's/ = .*$//g'`
+    which g${_ALIAS_NAME} > /dev/null
+    if [ $? -eq 0 ]; then
+      echo "g${_ALIAS_NAME} is already used."
+    else
+      alias g${_ALIAS_NAME}="git ${_ALIAS_NAME}"
+    fi
+  fi
+done < ~/.gitconfig
+unset _IS_ALIAS_LINE
+unset _ALIAS_NAME
+
+# Setup key bindings
+bind '"\C-b": backward-word'
+bind '"\C-f": forward-word'
+bind '"\C-w": unix-filename-rubout'
