@@ -14,6 +14,7 @@
     c = checkout
     cb = checkout -B
     cf = checkout -f
+    cfo = checkout -f origin/master
     cdev = checkout -f origin/master -B develop
     chr = cherry pick
     coa = commit --amend
