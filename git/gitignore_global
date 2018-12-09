@@ -11,3 +11,4 @@ venv/
 
 # idea's IDE
 .idea/
+*.iml
