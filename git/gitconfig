@@ -19,8 +19,8 @@
     coa = commit --amend
     com = commit -m
     d = diff
-    fe = fetch
-    fep = fetch --prune
+    f = fetch
+    fp = fetch --prune
     l = log --all --graph --pretty='format:%C(yellow)%h%C(cyan)%d %C(red)%ar     %C(reset)%s'
     me = merge
     p = push
