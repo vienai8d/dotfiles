@@ -15,12 +15,15 @@
     cb = checkout -B
     cf = checkout -f
     cfo = checkout -f origin/master
+    cfu = checkout -f up/master
     cdev = checkout -f origin/master -B develop
     chr = cherry pick
     coa = commit --amend
     com = commit -m
     d = diff
     f = fetch
+    fo = fetch origin/master
+    fu = fetch up/master
     fp = fetch --prune
     l = log --all --graph --pretty='format:%C(yellow)%h%C(cyan)%d %C(red)%ar     %C(reset)%s'
     me = merge
