@@ -17,7 +17,7 @@
     cfo = checkout -f origin/master
     cfu = checkout -f up/master
     cdev = checkout -f origin/master -B develop
-    chr = cherry pick
+    chr = cherry-pick
     coa = commit --amend
     com = commit -m
     d = diff
