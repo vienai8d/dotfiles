@@ -33,6 +33,9 @@
     pof = push origin -f
     re = rebase
     rei = rebase -i origin/master
+    rema = remote add
+    remr = remote rm
+    remv = remote -v
     res = reset
     resh = reset --soft HEAD~
     s = status
