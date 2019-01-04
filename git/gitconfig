@@ -22,9 +22,9 @@
     com = commit -m
     d = diff
     f = fetch
-    fo = fetch origin/master
+    fo = fetch origin
     fp = fetch --prune
-    fu = fetch up/master
+    fu = fetch up
     l = log --all --graph --pretty='format:%C(yellow)%h%C(cyan)%d %C(red)%ar     %C(reset)%s'
     me = merge
     p = push
