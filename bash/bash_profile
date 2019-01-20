@@ -9,6 +9,7 @@ source ~/.venv/bin/activate
 export PS1='$ '
 
 # Setup aliases
+alias nv=nvim
 alias g=git
 _IS_ALIAS_LINE=0
 while read line
