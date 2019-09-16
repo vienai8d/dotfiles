@@ -5,6 +5,9 @@ eval "$(anyenv init -)"
 # Activate virtualenv
 source ~/.venv/bin/activate
 
+# Up history size.
+HISTSIZE=100000
+
 # Setup a prompt
 export PS1='$ '
 
