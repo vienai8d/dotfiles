@@ -16,7 +16,7 @@ alias nv=nvim
 alias g=git
 
 # Create aliases for git.
-eval `cat .gitconfig | perl -0pe 's/^[\s\S]*alias]\n([\s\S]*)$/$1/m' | perl -pe 's/^ *(.*) = .*$/alias g$1="g $1";/'`
+eval `cat ~/.gitconfig | perl -0pe 's/^[\s\S]*alias]\n([\s\S]*)$/$1/m' | perl -pe 's/^ *(.*) = .*$/alias g$1="g $1";/'`
 
 # Setup key bindings
 bind '"\C-b": backward-word'
