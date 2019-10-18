@@ -11,6 +11,9 @@ HISTSIZE=100000
 # Setup a prompt
 export PS1='$ '
 
+# SSH key setting.
+ssh-add -K ~/.ssh/id_rsa
+
 # Setup aliases
 alias nv=nvim
 alias g=git
