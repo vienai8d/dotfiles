@@ -25,8 +25,3 @@ eval `cat ~/.gitconfig | perl -0pe 's/^[\s\S]*alias]\n([\s\S]*)$/$1/m' | perl -p
 bind '"\C-b": backward-word'
 bind '"\C-f": forward-word'
 bind '"\C-w": unix-filename-rubout'
-
-# Go settings.
-export GOROOT=$HOME/go
-export GOPATH=$HOME/go/goroot
-export PATH=$PATH:$HOME/go/bin
