@@ -13,7 +13,7 @@ source ~/.venv/bin/activate
 HISTSIZE=100000
 
 # SSH key setting.
-ssh-add -K ~/.ssh/id_rsa
+ssh-add -K ~/.ssh/id_rsa 2>/dev/null
 
 # Setup aliases
 alias nv=nvim
