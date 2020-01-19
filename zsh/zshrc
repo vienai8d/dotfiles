@@ -1,0 +1,5 @@
+# Setup a prompt
+export PROMPT='$ '
+
+# Create aliases for git.
+eval `cat ~/.gitconfig | perl -0pe 's/^[\s\S]*alias]\n([\s\S]*)$/$1/m' | perl -pe 's/^ *(.*) = .*$/alias g$1="g $1";/'`

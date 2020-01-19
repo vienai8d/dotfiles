@@ -1,0 +1,23 @@
+# Setup anyenv (see https://github.com/riywo/anyenv)
+export PATH="$HOME/.anyenv/bin:$PATH"
+eval "$(anyenv init -)"
+
+# Go settings.
+export GOBIN=$HOME/.gobin
+export PATH=$PATH:$GOBIN
+
+# Activate virtualenv
+source ~/.venv/bin/activate
+
+# Up history size.
+HISTSIZE=100000
+
+# SSH key setting.
+ssh-add -K ~/.ssh/id_rsa
+
+# Setup aliases
+alias nv=nvim
+alias g=git
+
+# Create aliases for git.
+eval `cat ~/.gitconfig | perl -0pe 's/^[\s\S]*alias]\n([\s\S]*)$/$1/m' | perl -pe 's/^ *(.*) = .*$/alias g$1="g $1";/'`

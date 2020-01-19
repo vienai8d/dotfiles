@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Setup for vim
 cp vim/vimrc ~/.vimrc
@@ -13,3 +13,6 @@ cp git/gitignore_global ~/.gitignore_global
 # Setup for bash
 cp bash/bash_profile ~/.bash_profile
 
+# Setup for zsh
+cp zsh/zprofile ~/.zprofile
+cp zsh/zshrc ~/.zshrc
