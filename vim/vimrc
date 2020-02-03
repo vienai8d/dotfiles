@@ -1,6 +1,8 @@
 syntax enable
 colorscheme elflord
 
+set cursorline
+set cursorcolumn
 set autoindent
 set backspace=indent,eol,start
 set expandtab
