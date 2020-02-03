@@ -6,6 +6,10 @@ eval "$(anyenv init -)"
 export GOBIN=$HOME/.gobin
 export PATH=$PATH:$GOBIN
 
+# Rust settings.
+source $HOME/.cargo/env
+export PATH=$PATH:$HOME/.cargo/bin
+
 # Activate virtualenv
 source ~/.venv/bin/activate
 
@@ -18,6 +22,3 @@ ssh-add -K ~/.ssh/id_rsa 2>/dev/null
 # Setup aliases
 alias nv=nvim
 alias g=git
-
-# Create aliases for git.
-eval `cat ~/.gitconfig | perl -0pe 's/^[\s\S]*alias]\n([\s\S]*)$/$1/m' | perl -pe 's/^ *(.*) = .*$/alias g$1="g $1";/'`
