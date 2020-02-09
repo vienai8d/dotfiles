@@ -4,6 +4,7 @@
 cp vim/vimrc ~/.vimrc
 
 # Setup for neovim
+mkdir -p ~/.config/nvim
 cp nvim/init.vim ~/.config/nvim/
 
 # Setup for git
