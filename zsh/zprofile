@@ -1,9 +1,11 @@
+# Zsh options.
+setopt interactivecomments
+
 # Setup anyenv (see https://github.com/riywo/anyenv)
 export PATH="$HOME/.anyenv/bin:$PATH"
 eval "$(anyenv init -)"
 
 # Go settings.
-export GOROOT=$HOME/go
 export GOBIN=$HOME/.gobin
 export PATH="$GOBIN:$PATH"
 
