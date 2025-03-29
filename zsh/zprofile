@@ -2,16 +2,16 @@
 setopt interactivecomments
 
 # Setup anyenv (see https://github.com/riywo/anyenv)
-export PATH="$HOME/.anyenv/bin:$PATH"
-eval "$(anyenv init -)"
+# export PATH="$HOME/.anyenv/bin:$PATH"
+# eval "$(anyenv init -)"
 
 # Go settings.
-export GOBIN=$HOME/.gobin
-export PATH="$GOBIN:$PATH"
+# export GOBIN=$HOME/.gobin
+# export PATH="$GOBIN:$PATH"
 
 # Rust settings.
-source $HOME/.cargo/env
-export PATH="$HOME/.cargo/bin:$PATH"
+# source $HOME/.cargo/env
+# export PATH="$HOME/.cargo/bin:$PATH"
 
 # Activate virtualenv
 source ~/.venv/bin/activate
@@ -20,7 +20,7 @@ source ~/.venv/bin/activate
 HISTSIZE=100000
 
 # SSH key setting.
-ssh-add -K ~/.ssh/id_rsa 2>/dev/null
+ssh-add --apple-use-keychain
 
 # Setup aliases
 alias nv=nvim
