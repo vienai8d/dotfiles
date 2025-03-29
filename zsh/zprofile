@@ -1,6 +1,9 @@
 # Zsh options.
 setopt interactivecomments
 
+# Activate UV
+source $HOME/.local/bin/env
+
 # Setup anyenv (see https://github.com/riywo/anyenv)
 # export PATH="$HOME/.anyenv/bin:$PATH"
 # eval "$(anyenv init -)"
